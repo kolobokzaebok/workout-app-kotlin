@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Workout App</string>
+    <string name="start">START</string>
+    <string name="main_app_image">main app image</string>
+    <string name="get_ready">GET READY</string>
+    <string name="exercise_image">exercise image</string>
+    <string name="finish_image">finish image</string>
+    <string name="well_done_kozak">Well Done, Kozak!</string>
+    <string name="finish">FINISH</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">no</string>
+    <string name="bmi">BMI</string>
+    <string name="weight_lbs">WEIGHT (lbs)</string>
+    <string name="height_in">HEIGHT (inch)</string>
+    <string name="calculate">Calculate</string>
+    <string name="us_units">US Units</string>
+    <string name="metric_units">Metric Units</string>
+    <string name="clear_input">Clear input</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:padding="@dimen/default_padding"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_image_height"
+        android:contentDescription="@string/main_app_image"
+        android:src="@drawable/main_app_image"
+        app:layout_constraintBottom_toTopOf="@id/fl_start_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_start_button"
+        android:layout_width="@dimen/fl_start_button_width"
+        android:layout_height="@dimen/fl_start_button_height"
+        android:background="@drawable/fl_start_button_ripple_background"
+        app:layout_constraintBottom_toBottomOf="@id/fl_bmi_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_image">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/start"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_bmi_button"
+        android:layout_width="@dimen/fl_bmi_button_width"
+        android:layout_height="@dimen/fl_bmi_button_height"
+        android:background="@drawable/fl_bmi_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fl_history_button"
+        app:layout_constraintTop_toBottomOf="@+id/fl_start_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/bmi"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_history_button"
+        android:layout_width="@dimen/fl_bmi_button_width"
+        android:layout_height="@dimen/fl_bmi_button_height"
+        android:background="@drawable/fl_bmi_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/fl_bmi_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_start_button">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/history"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

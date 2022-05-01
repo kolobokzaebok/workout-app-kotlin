@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".FinishActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_finish"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/toolbarTheme"
+        app:layout_constraintBottom_toTopOf="@id/iv_finish"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/ukr_yellow" />
+
+    <ImageView
+        android:id="@+id/iv_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/finish_image_height"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/finish_image"
+        android:src="@drawable/kozak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_finish" />
+
+    <TextView
+        android:id="@+id/tv_well_done"
+        style="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/well_done_kozak"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/bt_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_finish" />
+
+    <Button
+        android:id="@+id/bt_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:gravity="center"
+        android:text="@string/finish"
+        android:textColor="@color/ukr_yellow"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_well_done" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

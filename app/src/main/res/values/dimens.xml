@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  defaults  -->
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="medium_text_size">20sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="default_padding">15dp</dimen>
+    <!--  end of defaults  -->
+
+    <!--  app main image  -->
+    <dimen name="main_image_height">220dp</dimen>
+    <!--  end of app main image  -->
+
+    <!--  start button  -->
+    <dimen name="fl_start_button_width">150dp</dimen>
+    <dimen name="fl_start_button_height">150dp</dimen>
+    <dimen name="start_button_stroke_width">5dp</dimen>
+    <!--  end of start button  -->
+
+    <!--  bmi button  -->
+    <dimen name="fl_bmi_button_width">75dp</dimen>
+    <dimen name="fl_bmi_button_height">75dp</dimen>
+    <!--  end of bmi button  -->
+
+    <!--  exercise counter  -->
+    <dimen name="fl_counter_width">150dp</dimen>
+    <dimen name="fl_counter_height">150dp</dimen>
+    <dimen name="pb_counter_width">120dp</dimen>
+    <dimen name="pb_counter_height">120dp</dimen>
+    <dimen name="ll_counter_width">60dp</dimen>
+    <dimen name="ll_counter_height">60dp</dimen>
+    <!--  end of exercise counter  -->
+
+    <!--  exercise image  -->
+    <dimen name="iv_exercise_image_height">300dp</dimen>
+    <dimen name="iv_exercise_image_width">300dp</dimen>
+    <!--  end of exercise image  -->
+
+    <!--  exercise status item  -->
+    <dimen name="item_exercise_width">25dp</dimen>
+    <dimen name="item_exercise_height">25dp</dimen>
+    <!--  end of exercise status item  -->
+
+    <!--  app finish image  -->
+    <dimen name="finish_image_height">220dp</dimen>
+    <!--  end of app main image  -->
+
+</resources>
